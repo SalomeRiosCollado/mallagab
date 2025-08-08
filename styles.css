@@ -1,0 +1,48 @@
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fdeef4;
+    color: #4b2e39;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    color: #a86ea8;
+}
+.container {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 20px;
+}
+.cycle {
+    background-color: #f8d9ec;
+    border-radius: 12px;
+    padding: 15px;
+    min-width: 220px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.cycle h2 {
+    background-color: #e6c3e6;
+    padding: 10px;
+    border-radius: 8px;
+}
+.course {
+    background-color: #fff0f6;
+    margin: 8px 0;
+    padding: 8px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.course.locked {
+    background-color: #f5e0eb;
+    color: #888;
+    cursor: not-allowed;
+}
+.course.completed {
+    text-decoration: line-through;
+    background-color: #dcb3d9;
+    color: #555;
+}
